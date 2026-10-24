@@ -1,0 +1,38 @@
+[
+  {
+    "file": "clips/fleurs-gu-keyword.wav",
+    "expected": "safe",
+    "source": "fleurs",
+    "note": "gu_in #1597: એફઆઈસી વેસ્ટ સ્ટોરની પેલે પાર સ્ટેન્લીમાં આવેલા ટાપુઓની એકમાત્ર બેંકમાં નાણાંનો વિનિમય કરી"
+  },
+  {
+    "file": "clips/fleurs-gu-plain.wav",
+    "expected": "safe",
+    "source": "fleurs",
+    "note": "gu_in #1595: તીબેટનો બૌદ્ધવાદ બુદ્ધનાં ઉપદેશો ઉપર આધારિત છે, પરંતુ તેનો પ્રેમના મહાયાન પંથ દ્વારા અને ભ"
+  },
+  {
+    "file": "clips/fleurs-hi-keyword.wav",
+    "expected": "safe",
+    "source": "fleurs",
+    "note": "hi_in #1656: पुलिस ने कहा कि शव लगभग एक दिन पुराना है."
+  },
+  {
+    "file": "clips/fleurs-hi-plain.wav",
+    "expected": "safe",
+    "source": "fleurs",
+    "note": "hi_in #1602: मेजरकेन खाना, भूमध्य सागर में समान क्षेत्रों की तरह, रोटी, सब्जियों और मांस (विशेष रूप से "
+  },
+  {
+    "file": "clips/fleurs-en-keyword.wav",
+    "expected": "safe",
+    "source": "fleurs",
+    "note": "en_us #1518: A former Filipino policeman has kept Hong Kong tourists hostage by hijacking their bus in "
+  },
+  {
+    "file": "clips/fleurs-en-plain.wav",
+    "expected": "safe",
+    "source": "fleurs",
+    "note": "en_us #1548: When you call someone who is thousands of miles away, you are using a satellite."
+  }
+]

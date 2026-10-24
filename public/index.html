@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scam Call Shield · AI Guardian for India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Gujarati:wght@500;700&family=Noto+Sans+Devanagari:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dark">
+<div class="app-wrapper">
+  <!-- Top Navigation & Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo-shield">
+        <span class="shield-icon">🛡️</span>
+        <span class="pulse-ring"></span>
+      </div>
+      <div>
+        <div class="brand-row">
+          <h1 class="brand-title">Scam Call Shield</h1>
+          <span class="version-tag">v2.4 Swarm</span>
+        </div>
+        <p class="brand-subtitle">
+          <span class="lang-gu">સ્કેમ કોલ શિલ્ડ</span> · <span class="lang-hi">स्कैम कॉल शील्ड</span> · Real-time Elder Protection against Vishing & Digital Arrest
+        </p>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <div class="system-status-pill">
+        <span class="status-dot pulsing"></span>
+        <span class="status-label">4 Multi-Agents Armed</span>
+      </div>
+      <div class="elder-mode-toggle" title="Elder Friendly High Contrast & Large Text">
+        <button id="elderToggle" class="pill-btn">👵 Elder View: <b>OFF</b></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Dynamic Emergency Warning Banner -->
+    <section id="banner" class="banner banner-idle" role="alert" aria-live="assertive">
+      <div class="banner-inner">
+        <div class="banner-icon-col">
+          <div id="bannerIcon" class="banner-badge-icon">🛡️</div>
+        </div>
+        <div class="banner-content">
+          <div id="bannerTitle" class="banner-title">Guardian Active & Ready</div>
+          <div id="bannerText" class="banner-text">Select a call scenario or start the Live Mic Guardian on speakerphone.</div>
+        </div>
+        <div id="bannerActions" class="banner-actions" style="display: none;">
+          <button id="hangupBtn" class="action-btn hangup">🛑 Hang Up Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multi-Agent Telemetry Swarm Grid -->
+    <section class="agent-telemetry-section">
+      <div class="section-header">
+        <h2 class="section-title">⚡ Multi-Agent Swarm Intelligence</h2>
+        <span class="section-sub">Zero-latency combinatorial rules fused with multimodal Gemini 2.5 Flash</span>
+      </div>
+
+      <div class="agents-grid">
+        <!-- Agent 1: Sentinel Engine -->
+        <div class="agent-card" id="cardAgent1">
+          <div class="agent-top">
+            <div class="agent-id">
+              <span class="agent-dot green"></span>
+              <span class="agent-name">Agent 1: Sentinel</span>
+            </div>
+            <span class="agent-badge pass" id="statusAgent1">PASS · 0ms</span>
+          </div>
+          <div class="agent-role">Deterministic UPI & Regex Engine</div>
+          <div class="agent-metric-row">
+            <span class="metric-label">Latency:</span>
+            <span class="metric-val" id="metricLatency">0.4 ms</span>
+            <span class="metric-sep">·</span>
+            <span class="metric-label">Cost:</span>
+            <span class="metric-val text-green">$0.00</span>
+          </div>
+          <div class="agent-live-log" id="detailAgent1">Watching for UPI inversion & APK traps</div>
+        </div>
+
+        <!-- Agent 2: Acoustic Perception -->
+        <div class="agent-card" id="cardAgent2">
+          <div class="agent-top">
+            <div class="agent-id">
+              <span class="agent-dot blue"></span>
+              <span class="agent-name">Agent 2: Acoustic</span>
+            </div>
+            <span class="agent-badge idle" id="statusAgent2">STANDBY</span>
+          </div>
+          <div class="agent-role">Gemini 2.5 Flash Multimodal</div>
+          <div class="agent-metric-row">
+            <span class="metric-label">Vocal Cadence:</span>
+            <span class="metric-val" id="metricAcousticRisk">Normal</span>
+            <span class="metric-sep">·</span>
+            <span class="metric-label">VAD Filter:</span>
+            <span class="metric-val text-blue">Active</span>
+          </div>
+          <div class="agent-live-log" id="detailAgent2">Awaiting audio input stream...</div>
+        </div>
+
+        <!-- Agent 3: Cognitive Matrix -->
+        <div class="agent-card" id="cardAgent3">
+          <div class="agent-top">
+            <div class="agent-id">
+              <span class="agent-dot purple"></span>
+              <span class="agent-name">Agent 3: Cognitive Matrix</span>
+            </div>
+            <span class="agent-badge purple" id="statusAgent3">P×T×M×E (1.0x)</span>
+          </div>
+          <div class="agent-role">Combinatorial Funnel Vector</div>
+          <div class="agent-metric-row">
+            <span class="metric-label">Active Dims:</span>
+            <span class="metric-val" id="metricDims">0 / 4</span>
+            <span class="metric-sep">·</span>
+            <span class="metric-label">Diversity μ(D):</span>
+            <span class="metric-val" id="metricMultiplier">1.00x</span>
+          </div>
+          <div class="agent-live-log" id="detailAgent3">Phase 1: Initial Monitoring</div>
+        </div>
+
+        <!-- Agent 4: Guardian Shield -->
+        <div class="agent-card" id="cardAgent4">
+          <div class="agent-top">
+            <div class="agent-id">
+              <span class="agent-dot amber"></span>
+              <span class="agent-name">Agent 4: Guardian</span>
+            </div>
+            <span class="agent-badge ok" id="statusAgent4">ARMED</span>
+          </div>
+          <div class="agent-role">Spoken Intervention & SOS</div>
+          <div class="agent-metric-row">
+            <span class="metric-label">Voice Alert:</span>
+            <span class="metric-val text-green" id="metricVoiceStatus">Ready</span>
+            <span class="metric-sep">·</span>
+            <span class="metric-label">WhatsApp SOS:</span>
+            <span class="metric-val" id="metricSosStatus">Armed</span>
+          </div>
+          <div class="agent-live-log" id="detailAgent4">Spoken alerts configured for elder</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Workspace Grid -->
+    <div class="workspace-grid">
+      <!-- Left Column: Audio Source & Caller Intelligence -->
+      <section class="card glass-card">
+        <div class="card-head">
+          <h2 class="card-title">1. Audio Source & Controls</h2>
+          <div class="mode-pill-toggle">
+            <button id="tabDemo" class="pill-btn active">📁 Demo Call</button>
+            <button id="tabMic" class="pill-btn">🎙️ Live Mic</button>
+          </div>
+        </div>
+
+        <!-- Demo Call Panel -->
+        <div id="panelDemo" class="panel-section">
+          <label class="input-label" for="callSelect">Select Pre-recorded Call Scenario:</label>
+          <div class="select-wrapper">
+            <select id="callSelect"></select>
+          </div>
+
+          <label class="upload-box" for="upload">
+            <span class="upload-icon">📤</span>
+            <span class="upload-text">Or upload custom audio (.wav, .mp3)</span>
+            <input type="file" id="upload" accept="audio/wav,audio/*" class="sr-only">
+          </label>
+
+          <div class="caller-id-box">
+            <div class="caller-id-header">
+              <label class="input-label" for="callerPhone">Incoming Caller ID:</label>
+              <span class="db-indicator">Live DB Check</span>
+            </div>
+            <div class="input-with-icon">
+              <span class="input-icon">📞</span>
+              <input id="callerPhone" value="+91 98765 00001" placeholder="+91 98765 00001">
+            </div>
+            <div id="callerBadge" class="caller-badge"></div>
+          </div>
+
+          <div class="controls-row">
+            <button id="play" class="btn btn-primary btn-play">
+              <span class="btn-icon">▶</span> Play Call
+            </button>
+            <button id="stop" class="btn btn-secondary">■ Stop</button>
+          </div>
+        </div>
+
+        <!-- Live Mic Guardian Panel -->
+        <div id="panelMic" class="panel-section" style="display: none;">
+          <div class="mic-guardian-box">
+            <div class="mic-radar">
+              <div class="mic-core">🎙️</div>
+              <div class="mic-wave wave1"></div>
+              <div class="mic-wave wave2"></div>
+            </div>
+            <div class="mic-instructions">
+              <h3>Live Room Speakerphone Guardian</h3>
+              <p>Put your phone on speakerphone next to this laptop. The AI agents will continuously monitor in the background with RMS silence detection.</p>
+            </div>
+            <div class="controls-row" style="margin-top: 16px;">
+              <button id="micStart" class="btn btn-warning btn-mic">
+                <span class="btn-icon">🎙️</span> Start Live Guardian
+              </button>
+              <button id="micStop" class="btn btn-secondary" disabled>■ Stop</button>
+            </div>
+            <div id="micStatus" class="mic-status-label">Microphone is currently idle</div>
+          </div>
+        </div>
+
+        <!-- Language & Voice Alert Config -->
+        <div class="alert-config-box">
+          <div class="config-row">
+            <label class="input-label" for="lang">Elder Language:</label>
+            <select id="lang" class="compact-select">
+              <option value="gu">🇮🇳 ગુજરાતી (Gujarati)</option>
+              <option value="hi">🇮🇳 हिन्दी (Hindi)</option>
+            </select>
+          </div>
+          <div class="config-row" style="margin-top: 8px;">
+            <label class="checkbox-label">
+              <input type="checkbox" id="speak" checked>
+              <span>Speak voice alert immediately upon scam detection</span>
+            </label>
+          </div>
+        </div>
+
+        <div id="status" class="status-terminal"></div>
+
+        <!-- Blacklisted DB Drawer -->
+        <details class="blacklist-drawer">
+          <summary class="blacklist-summary">
+            <span>🛡️ Fraud Numbers Registry (<b id="blacklistCount" class="text-red">0</b>)</span>
+            <span class="summary-arrow">▾</span>
+          </summary>
+          <div id="blacklistList" class="blacklist-list"></div>
+        </details>
+      </section>
+
+      <!-- Center Column: Real-Time Risk & Reasoning -->
+      <section class="card glass-card">
+        <div class="card-head">
+          <h2 class="card-title">2. Real-Time Risk & Telemetry</h2>
+          <div class="risk-badge" id="riskBadge">SAFE</div>
+        </div>
+
+        <!-- Risk Gauge -->
+        <div class="gauge-container">
+          <div class="gauge-label-row">
+            <span class="gauge-title">Cumulative Threat Score</span>
+            <span class="gauge-value"><b id="riskNum">0</b><span class="pct">%</span></span>
+          </div>
+          <div class="meter-bar">
+            <div id="risk" class="meter-fill"></div>
+          </div>
+          <div class="gauge-markers">
+            <span>0% Safe</span>
+            <span>40% Suspicious</span>
+            <span>75% Scam Alarm</span>
+          </div>
+        </div>
+
+        <!-- Active Dimension Vector Pills -->
+        <div class="vector-section">
+          <div class="vector-title">Attack Vector Coverage (P × T × M × E):</div>
+          <div id="dimensionsBox" class="dimensions-box"></div>
+        </div>
+
+        <!-- Red Flag Tags -->
+        <div class="flags-section">
+          <div class="flags-title">Identified Red Flags:</div>
+          <div id="flags" class="chips-container"></div>
+        </div>
+
+        <!-- AI Explanation Box -->
+        <div class="reason-section">
+          <div class="reason-title">Agent Analysis & Evidence:</div>
+          <div id="reason" class="reason-box">Awaiting call start...</div>
+        </div>
+
+        <!-- Live Chronological Transcript Stream -->
+        <div class="transcript-section">
+          <div class="transcript-head">
+            <span>📜 Live Call Transcript Stream</span>
+            <span class="transcript-auto">Auto-scrolling</span>
+          </div>
+          <div id="transcript" class="transcript-stream"></div>
+        </div>
+      </section>
+
+      <!-- Right Column: Emergency WhatsApp Dispatch -->
+      <section class="card glass-card">
+        <div class="card-head">
+          <h2 class="card-title">3. Family Emergency SOS</h2>
+          <span class="sos-tag">WhatsApp Cloud</span>
+        </div>
+
+        <p class="card-desc">
+          Automatically dispatches an urgent WhatsApp message with the exact scam transcript to family when an elder is in danger.
+        </p>
+
+        <div class="contact-form">
+          <div class="form-group">
+            <label class="input-label" for="cName">Family Member Name:</label>
+            <input id="cName" placeholder="e.g. Rahul Patel">
+          </div>
+
+          <div class="form-group">
+            <label class="input-label" for="cRel">Their Relation to You:</label>
+            <input id="cRel" placeholder="e.g. Son / Daughter">
+          </div>
+
+          <div class="form-group">
+            <label class="input-label" for="cPhone">WhatsApp Number (with country code):</label>
+            <input id="cPhone" placeholder="e.g. 919876543210">
+          </div>
+
+          <div class="form-group">
+            <label class="input-label" for="myRel">Your Relation (Elder on call):</label>
+            <input id="myRel" placeholder="e.g. Father">
+          </div>
+
+          <label class="checkbox-label" style="margin-top: 10px;">
+            <input type="checkbox" id="autoNotify" checked>
+            <span>Auto-send emergency WhatsApp SOS on scam</span>
+          </label>
+        </div>
+
+        <div id="notice" class="sos-notice" hidden></div>
+
+        <!-- Quick 1930 Cyber Cell Banner -->
+        <div class="cyber-cell-box">
+          <div class="cyber-cell-icon">🇮🇳</div>
+          <div>
+            <b>National Cyber Crime Helpline: 1930</b>
+            <div style="font-size: 12px; color: var(--mut); margin-top: 2px;">
+              Report financial fraud within the golden hour to freeze scammer accounts.
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

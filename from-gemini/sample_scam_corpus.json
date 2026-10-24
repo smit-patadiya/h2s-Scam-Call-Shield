@@ -1,0 +1,866 @@
+[
+  {
+    "id": "SCAM_IN_00001",
+    "vector": "P01_T01_M01_E01",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00002",
+    "vector": "P01_T01_M01_E02",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00003",
+    "vector": "P01_T01_M01_E05",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00004",
+    "vector": "P01_T01_M02_E01",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. Local police team is dispatched to your residence with non-bailable arrest warrant. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00005",
+    "vector": "P01_T01_M02_E02",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. Local police team is dispatched to your residence with non-bailable arrest warrant. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00006",
+    "vector": "P01_T01_M02_E05",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. Local police team is dispatched to your residence with non-bailable arrest warrant. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00007",
+    "vector": "P01_T01_M03_E01",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You only have 15 minutes before permanent deactivation and bank seizure. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Sirf 15 minute ka samay hai verification complete karne ke liye. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00008",
+    "vector": "P01_T01_M03_E02",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You only have 15 minutes before permanent deactivation and bank seizure. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Sirf 15 minute ka samay hai verification complete karne ke liye. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00009",
+    "vector": "P01_T01_M03_E05",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You only have 15 minutes before permanent deactivation and bank seizure. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Sirf 15 minute ka samay hai verification complete karne ke liye. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00010",
+    "vector": "P01_T02_M01_E01",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your mobile number will be disconnected within 2 hours due to illegal activities. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00011",
+    "vector": "P01_T02_M01_E02",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your mobile number will be disconnected within 2 hours due to illegal activities. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00012",
+    "vector": "P01_T02_M01_E05",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your mobile number will be disconnected within 2 hours due to illegal activities. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00013",
+    "vector": "P01_T02_M02_E01",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your mobile number will be disconnected within 2 hours due to illegal activities. Local police team is dispatched to your residence with non-bailable arrest warrant. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00014",
+    "vector": "P01_T02_M02_E02",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your mobile number will be disconnected within 2 hours due to illegal activities. Local police team is dispatched to your residence with non-bailable arrest warrant. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00015",
+    "vector": "P01_T02_M02_E05",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your mobile number will be disconnected within 2 hours due to illegal activities. Local police team is dispatched to your residence with non-bailable arrest warrant. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00016",
+    "vector": "P01_T02_M03_E01",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your mobile number will be disconnected within 2 hours due to illegal activities. You only have 15 minutes before permanent deactivation and bank seizure. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Sirf 15 minute ka samay hai verification complete karne ke liye. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00017",
+    "vector": "P01_T02_M03_E02",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your mobile number will be disconnected within 2 hours due to illegal activities. You only have 15 minutes before permanent deactivation and bank seizure. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Sirf 15 minute ka samay hai verification complete karne ke liye. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00018",
+    "vector": "P01_T02_M03_E05",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your mobile number will be disconnected within 2 hours due to illegal activities. You only have 15 minutes before permanent deactivation and bank seizure. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Sirf 15 minute ka samay hai verification complete karne ke liye. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00019",
+    "vector": "P01_T04_M01_E01",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00020",
+    "vector": "P01_T04_M01_E02",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00021",
+    "vector": "P01_T04_M01_E05",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00022",
+    "vector": "P01_T04_M02_E01",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. Local police team is dispatched to your residence with non-bailable arrest warrant. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00023",
+    "vector": "P01_T04_M02_E02",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. Local police team is dispatched to your residence with non-bailable arrest warrant. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00024",
+    "vector": "P01_T04_M02_E05",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. Local police team is dispatched to your residence with non-bailable arrest warrant. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00025",
+    "vector": "P01_T04_M03_E01",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You only have 15 minutes before permanent deactivation and bank seizure. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Sirf 15 minute ka samay hai verification complete karne ke liye. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00026",
+    "vector": "P01_T04_M03_E02",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You only have 15 minutes before permanent deactivation and bank seizure. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Sirf 15 minute ka samay hai verification complete karne ke liye. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00027",
+    "vector": "P01_T04_M03_E05",
+    "transcript_en": "This is Central Bureau of Investigation Head Office New Delhi. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You only have 15 minutes before permanent deactivation and bank seizure. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Main CBI Cyber Branch se Inspector bol raha hoon. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Sirf 15 minute ka samay hai verification complete karne ke liye. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00028",
+    "vector": "P03_T01_M01_E01",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00029",
+    "vector": "P03_T01_M01_E02",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Customs clearance interception officer here. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00030",
+    "vector": "P03_T01_M01_E05",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00031",
+    "vector": "P03_T01_M02_E01",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. Local police team is dispatched to your residence with non-bailable arrest warrant. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00032",
+    "vector": "P03_T01_M02_E02",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. Local police team is dispatched to your residence with non-bailable arrest warrant. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Customs clearance interception officer here. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00033",
+    "vector": "P03_T01_M02_E05",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. Local police team is dispatched to your residence with non-bailable arrest warrant. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00034",
+    "vector": "P03_T01_M03_E01",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You only have 15 minutes before permanent deactivation and bank seizure. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Sirf 15 minute ka samay hai verification complete karne ke liye. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00035",
+    "vector": "P03_T01_M03_E02",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You only have 15 minutes before permanent deactivation and bank seizure. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Customs clearance interception officer here. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Sirf 15 minute ka samay hai verification complete karne ke liye. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00036",
+    "vector": "P03_T01_M03_E05",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You only have 15 minutes before permanent deactivation and bank seizure. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Sirf 15 minute ka samay hai verification complete karne ke liye. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00037",
+    "vector": "P03_T02_M01_E01",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your mobile number will be disconnected within 2 hours due to illegal activities. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00038",
+    "vector": "P03_T02_M01_E02",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your mobile number will be disconnected within 2 hours due to illegal activities. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Customs clearance interception officer here. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00039",
+    "vector": "P03_T02_M01_E05",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your mobile number will be disconnected within 2 hours due to illegal activities. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00040",
+    "vector": "P03_T02_M02_E01",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your mobile number will be disconnected within 2 hours due to illegal activities. Local police team is dispatched to your residence with non-bailable arrest warrant. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00041",
+    "vector": "P03_T02_M02_E02",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your mobile number will be disconnected within 2 hours due to illegal activities. Local police team is dispatched to your residence with non-bailable arrest warrant. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Customs clearance interception officer here. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00042",
+    "vector": "P03_T02_M02_E05",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your mobile number will be disconnected within 2 hours due to illegal activities. Local police team is dispatched to your residence with non-bailable arrest warrant. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00043",
+    "vector": "P03_T02_M03_E01",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your mobile number will be disconnected within 2 hours due to illegal activities. You only have 15 minutes before permanent deactivation and bank seizure. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Sirf 15 minute ka samay hai verification complete karne ke liye. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00044",
+    "vector": "P03_T02_M03_E02",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your mobile number will be disconnected within 2 hours due to illegal activities. You only have 15 minutes before permanent deactivation and bank seizure. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Customs clearance interception officer here. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Sirf 15 minute ka samay hai verification complete karne ke liye. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00045",
+    "vector": "P03_T02_M03_E05",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your mobile number will be disconnected within 2 hours due to illegal activities. You only have 15 minutes before permanent deactivation and bank seizure. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Sirf 15 minute ka samay hai verification complete karne ke liye. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00046",
+    "vector": "P03_T04_M01_E01",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00047",
+    "vector": "P03_T04_M01_E02",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Customs clearance interception officer here. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00048",
+    "vector": "P03_T04_M01_E05",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00049",
+    "vector": "P03_T04_M02_E01",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. Local police team is dispatched to your residence with non-bailable arrest warrant. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00050",
+    "vector": "P03_T04_M02_E02",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. Local police team is dispatched to your residence with non-bailable arrest warrant. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Customs clearance interception officer here. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00051",
+    "vector": "P03_T04_M02_E05",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. Local police team is dispatched to your residence with non-bailable arrest warrant. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00052",
+    "vector": "P03_T04_M03_E01",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You only have 15 minutes before permanent deactivation and bank seizure. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Sirf 15 minute ka samay hai verification complete karne ke liye. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00053",
+    "vector": "P03_T04_M03_E02",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You only have 15 minutes before permanent deactivation and bank seizure. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Customs clearance interception officer here. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Sirf 15 minute ka samay hai verification complete karne ke liye. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00054",
+    "vector": "P03_T04_M03_E05",
+    "transcript_en": "I am calling from Mumbai Airport Narcotics Control Bureau. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You only have 15 minutes before permanent deactivation and bank seizure. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Customs clearance interception officer here. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Sirf 15 minute ka samay hai verification complete karne ke liye. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00055",
+    "vector": "P04_T01_M01_E01",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00056",
+    "vector": "P04_T01_M01_E02",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00057",
+    "vector": "P04_T01_M01_E05",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00058",
+    "vector": "P04_T01_M02_E01",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. Local police team is dispatched to your residence with non-bailable arrest warrant. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00059",
+    "vector": "P04_T01_M02_E02",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. Local police team is dispatched to your residence with non-bailable arrest warrant. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00060",
+    "vector": "P04_T01_M02_E05",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. Local police team is dispatched to your residence with non-bailable arrest warrant. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00061",
+    "vector": "P04_T01_M03_E01",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You only have 15 minutes before permanent deactivation and bank seizure. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Sirf 15 minute ka samay hai verification complete karne ke liye. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00062",
+    "vector": "P04_T01_M03_E02",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You only have 15 minutes before permanent deactivation and bank seizure. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Sirf 15 minute ka samay hai verification complete karne ke liye. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00063",
+    "vector": "P04_T01_M03_E05",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You only have 15 minutes before permanent deactivation and bank seizure. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Sirf 15 minute ka samay hai verification complete karne ke liye. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00064",
+    "vector": "P04_T02_M01_E01",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your mobile number will be disconnected within 2 hours due to illegal activities. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00065",
+    "vector": "P04_T02_M01_E02",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your mobile number will be disconnected within 2 hours due to illegal activities. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00066",
+    "vector": "P04_T02_M01_E05",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your mobile number will be disconnected within 2 hours due to illegal activities. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00067",
+    "vector": "P04_T02_M02_E01",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your mobile number will be disconnected within 2 hours due to illegal activities. Local police team is dispatched to your residence with non-bailable arrest warrant. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00068",
+    "vector": "P04_T02_M02_E02",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your mobile number will be disconnected within 2 hours due to illegal activities. Local police team is dispatched to your residence with non-bailable arrest warrant. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00069",
+    "vector": "P04_T02_M02_E05",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your mobile number will be disconnected within 2 hours due to illegal activities. Local police team is dispatched to your residence with non-bailable arrest warrant. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00070",
+    "vector": "P04_T02_M03_E01",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your mobile number will be disconnected within 2 hours due to illegal activities. You only have 15 minutes before permanent deactivation and bank seizure. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Sirf 15 minute ka samay hai verification complete karne ke liye. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00071",
+    "vector": "P04_T02_M03_E02",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your mobile number will be disconnected within 2 hours due to illegal activities. You only have 15 minutes before permanent deactivation and bank seizure. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Sirf 15 minute ka samay hai verification complete karne ke liye. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00072",
+    "vector": "P04_T02_M03_E05",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your mobile number will be disconnected within 2 hours due to illegal activities. You only have 15 minutes before permanent deactivation and bank seizure. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Sirf 15 minute ka samay hai verification complete karne ke liye. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00073",
+    "vector": "P04_T04_M01_E01",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00074",
+    "vector": "P04_T04_M01_E02",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00075",
+    "vector": "P04_T04_M01_E05",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00076",
+    "vector": "P04_T04_M02_E01",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. Local police team is dispatched to your residence with non-bailable arrest warrant. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00077",
+    "vector": "P04_T04_M02_E02",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. Local police team is dispatched to your residence with non-bailable arrest warrant. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00078",
+    "vector": "P04_T04_M02_E05",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. Local police team is dispatched to your residence with non-bailable arrest warrant. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00079",
+    "vector": "P04_T04_M03_E01",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You only have 15 minutes before permanent deactivation and bank seizure. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Sirf 15 minute ka samay hai verification complete karne ke liye. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00080",
+    "vector": "P04_T04_M03_E02",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You only have 15 minutes before permanent deactivation and bank seizure. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Sirf 15 minute ka samay hai verification complete karne ke liye. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00081",
+    "vector": "P04_T04_M03_E05",
+    "transcript_en": "This is Department of Telecom TRAI verification center. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You only have 15 minutes before permanent deactivation and bank seizure. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Airtel head office compliance division se call hai. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Sirf 15 minute ka samay hai verification complete karne ke liye. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00082",
+    "vector": "P07_T01_M01_E01",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Power board billing department alert call. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00083",
+    "vector": "P07_T01_M01_E02",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Power board billing department alert call. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00084",
+    "vector": "P07_T01_M01_E05",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Power board billing department alert call. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00085",
+    "vector": "P07_T01_M02_E01",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. Local police team is dispatched to your residence with non-bailable arrest warrant. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Power board billing department alert call. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00086",
+    "vector": "P07_T01_M02_E02",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. Local police team is dispatched to your residence with non-bailable arrest warrant. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Power board billing department alert call. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00087",
+    "vector": "P07_T01_M02_E05",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. Local police team is dispatched to your residence with non-bailable arrest warrant. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Power board billing department alert call. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00088",
+    "vector": "P07_T01_M03_E01",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You only have 15 minutes before permanent deactivation and bank seizure. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Power board billing department alert call. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Sirf 15 minute ka samay hai verification complete karne ke liye. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00089",
+    "vector": "P07_T01_M03_E02",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You only have 15 minutes before permanent deactivation and bank seizure. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Power board billing department alert call. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Sirf 15 minute ka samay hai verification complete karne ke liye. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00090",
+    "vector": "P07_T01_M03_E05",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your courier parcel to Taiwan was seized with 5 fake passports and 150g MDMA drugs. You only have 15 minutes before permanent deactivation and bank seizure. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Power board billing department alert call. Aapke naam ka parcel mila hai jisme illegal banned chemicals hain. Sirf 15 minute ka samay hai verification complete karne ke liye. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00091",
+    "vector": "P07_T02_M01_E01",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your mobile number will be disconnected within 2 hours due to illegal activities. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Power board billing department alert call. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00092",
+    "vector": "P07_T02_M01_E02",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your mobile number will be disconnected within 2 hours due to illegal activities. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Power board billing department alert call. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00093",
+    "vector": "P07_T02_M01_E05",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your mobile number will be disconnected within 2 hours due to illegal activities. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Power board billing department alert call. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00094",
+    "vector": "P07_T02_M02_E01",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your mobile number will be disconnected within 2 hours due to illegal activities. Local police team is dispatched to your residence with non-bailable arrest warrant. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Power board billing department alert call. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00095",
+    "vector": "P07_T02_M02_E02",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your mobile number will be disconnected within 2 hours due to illegal activities. Local police team is dispatched to your residence with non-bailable arrest warrant. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Power board billing department alert call. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00096",
+    "vector": "P07_T02_M02_E05",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your mobile number will be disconnected within 2 hours due to illegal activities. Local police team is dispatched to your residence with non-bailable arrest warrant. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Power board billing department alert call. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00097",
+    "vector": "P07_T02_M03_E01",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your mobile number will be disconnected within 2 hours due to illegal activities. You only have 15 minutes before permanent deactivation and bank seizure. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Power board billing department alert call. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Sirf 15 minute ka samay hai verification complete karne ke liye. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00098",
+    "vector": "P07_T02_M03_E02",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your mobile number will be disconnected within 2 hours due to illegal activities. You only have 15 minutes before permanent deactivation and bank seizure. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Power board billing department alert call. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Sirf 15 minute ka samay hai verification complete karne ke liye. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00099",
+    "vector": "P07_T02_M03_E05",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your mobile number will be disconnected within 2 hours due to illegal activities. You only have 15 minutes before permanent deactivation and bank seizure. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Power board billing department alert call. Yeh phone number turant band ho jayega cyber complaint ke kaaran. Sirf 15 minute ka samay hai verification complete karne ke liye. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00100",
+    "vector": "P07_T04_M01_E01",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Power board billing department alert call. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00101",
+    "vector": "P07_T04_M01_E02",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Power board billing department alert call. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00102",
+    "vector": "P07_T04_M01_E05",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You are placed under digital arrest; switch on WhatsApp video and stay in a closed room alone. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Power board billing department alert call. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Section 91 notice hai, video call band nahi karni hai, kisi ko batana mana hai. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00103",
+    "vector": "P07_T04_M02_E01",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. Local police team is dispatched to your residence with non-bailable arrest warrant. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Power board billing department alert call. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00104",
+    "vector": "P07_T04_M02_E02",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. Local police team is dispatched to your residence with non-bailable arrest warrant. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Power board billing department alert call. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00105",
+    "vector": "P07_T04_M02_E05",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. Local police team is dispatched to your residence with non-bailable arrest warrant. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Power board billing department alert call. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Turant cooperate karein warna 20 minute me team aapke ghar aayegi. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00106",
+    "vector": "P07_T04_M03_E01",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You only have 15 minutes before permanent deactivation and bank seizure. Install AnyDesk from Play Store and provide the 9-digit code for physical device verification.",
+    "transcript_hinglish": "Power board billing department alert call. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Sirf 15 minute ka samay hai verification complete karne ke liye. Play Store se QuickSupport download karke screen share code batao.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00107",
+    "vector": "P07_T04_M03_E02",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You only have 15 minutes before permanent deactivation and bank seizure. Scan this QR code and type your UPI PIN to approve the refund to your bank account.",
+    "transcript_hinglish": "Power board billing department alert call. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Sirf 15 minute ka samay hai verification complete karne ke liye. Google Pay me collect request accept karke pin enter karo turant.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  },
+  {
+    "id": "SCAM_IN_00108",
+    "vector": "P07_T04_M03_E05",
+    "transcript_en": "Electricity board distribution control room se complaint officer. Your past month electricity bill is not updated; electricity connection will be severed at 9:30 PM. You only have 15 minutes before permanent deactivation and bank seizure. Transfer your entire liquid balance to RBI certified safe escrow account for financial verification.",
+    "transcript_hinglish": "Power board billing department alert call. Bijli ka bill baki hone ke kaaran supply raat 9:30 baje disconnect hogi. Sirf 15 minute ka samay hai verification complete karne ke liye. Sare paise RBI ke safe holding account me transfer karo clearance report ke liye.",
+    "label": "SCAM",
+    "risk_baseline": 1.0
+  }
+]

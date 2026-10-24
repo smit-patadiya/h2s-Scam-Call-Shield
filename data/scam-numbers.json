@@ -1,0 +1,29 @@
+[
+  {
+    "phone": "+919876500001",
+    "category": "Digital Arrest",
+    "flags": [
+      "authority_claim",
+      "threat",
+      "isolation",
+      "personal_info_request"
+    ],
+    "risk": 95,
+    "reportedAt": "2026-10-24T13:27:46.405Z",
+    "reportsCount": 15,
+    "notes": "Impersonating Mumbai Police Cyber Crime / Narcotics Department | Caller claims to be from 'Mumbai Police Cyber Cell' and immediately references the victim's Aadhaar number, a common tactic to establish false authority and initiate an identity-related scam."
+  },
+  {
+    "phone": "+919876500002",
+    "category": "Bank KYC Freeze",
+    "flags": [
+      "authority_claim",
+      "urgency",
+      "otp_request"
+    ],
+    "risk": 92,
+    "reportedAt": "2026-10-22T14:30:00Z",
+    "reportsCount": 8,
+    "notes": "Fake SBI / HDFC KYC expiration threat demanding OTP"
+  }
+]

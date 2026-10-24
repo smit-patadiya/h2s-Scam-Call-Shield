@@ -1,0 +1,38 @@
+{
+  "model": "gemini-4-argon",
+  "chunkSec": 4,
+  "results": [
+    {
+      "file": "../public/calls/gu-scam.wav",
+      "expected": "scam",
+      "source": "demo",
+      "note": "Gujarati digital arrest",
+      "duration": 14.5,
+      "chunks": [
+        {
+          "end": 4,
+          "error": "fetch failed"
+        },
+        {
+          "end": 8,
+          "error": "Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+        },
+        {
+          "end": 12,
+          "error": "Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+        },
+        {
+          "end": 14.5,
+          "error": "Gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+        }
+      ],
+      "verdict": "safe",
+      "maxRisk": 0,
+      "flags": [],
+      "firstScamAt": null,
+      "errors": 4,
+      "pass": false,
+      "seconds": 207.4
+    }
+  ]
+}

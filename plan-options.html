@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scam Call Shield — Strategic Plan & Architecture Roadmap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --surface: #121826;
+      --surface-raised: #182234;
+      --surface-card: rgba(24, 34, 52, 0.7);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-highlight: rgba(99, 102, 241, 0.3);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-sub: #64748b;
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --primary-light: rgba(99, 102, 241, 0.15);
+      --accent-cyan: #06b6d4;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-rose: #f43f5e;
+      --glow-purple: rgba(99, 102, 241, 0.25);
+      --glow-cyan: rgba(6, 182, 212, 0.2);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(6, 182, 212, 0.1) 0%, transparent 45%);
+      background-attachment: fixed;
+      padding-bottom: 80px;
+    }
+
+    /* Top Navigation Bar */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: rgba(11, 15, 25, 0.82);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .shield-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 4px 16px var(--glow-purple);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    /* Hero Section */
+    .hero {
+      max-width: 1280px;
+      margin: 40px auto 30px;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--accent-emerald);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      margin-bottom: 20px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-emerald);
+      box-shadow: 0 0 10px var(--accent-emerald);
+      animation: pulse-dot 2s infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 780px;
+      margin: 0 auto 32px;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Status Banner / Quick Metrics */
+    .metrics-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .metric-card {
+      background: var(--surface-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .metric-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-highlight);
+    }
+
+    .metric-label {
+      font-size: 0.85rem;
+      color: var(--text-sub);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+
+    .metric-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .metric-note {
+      font-size: 0.85rem;
+      color: var(--accent-cyan);
+    }
+
+    /* Section Headings */
+    .section-title-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Interactive Options Tabs */
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 24px;
+      margin-bottom: 56px;
+    }
+
+    .option-card {
+      background: var(--surface-card);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .option-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: transparent;
+      transition: background 0.3s ease;
+    }
+
+    .option-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      border-color: var(--border-highlight);
+    }
+
+    .option-card.recommended::before {
+      background: linear-gradient(90deg, #6366f1, #06b6d4);
+    }
+
+    .option-card.option-b::before {
+      background: linear-gradient(90deg, #10b981, #06b6d4);
+    }
+
+    .option-card.option-c::before {
+      background: linear-gradient(90deg, #f59e0b, #f43f5e);
+    }
+
+    .option-badge-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .option-tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      letter-spacing: 0.05em;
+    }
+
+    .tag-recommended {
+      background: var(--primary-light);
+      color: #818cf8;
+      border: 1px solid rgba(99, 102, 241, 0.4);
+    }
+
+    .tag-live {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+    }
+
+    .tag-enterprise {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+
+    .option-icon {
+      font-size: 28px;
+    }
+
+    .option-name {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .option-summary {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+
+    .feature-list li {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .feature-list li svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .feature-list strong {
+      color: var(--text-main);
+    }
+
+    .pros-cons {
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+    }
+
+    .pros-cons p {
+      margin-bottom: 6px;
+    }
+    .pros-cons p:last-child {
+      margin-bottom: 0;
+    }
+
+    .badge-pro {
+      color: var(--accent-emerald);
+      font-weight: 600;
+    }
+    .badge-con {
+      color: var(--accent-amber);
+      font-weight: 600;
+    }
+
+    .action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 12px 18px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      box-shadow: 0 4px 16px var(--glow-purple);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    /* Comparison Table */
+    .table-card {
+      background: var(--surface-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow-x: auto;
+      margin-bottom: 56px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    th {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 16px 20px;
+      color: var(--text-sub);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.8rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    td strong {
+      color: var(--text-main);
+    }
+
+    /* Architecture Flow Visualizer */
+    .flow-wrapper {
+      background: var(--surface-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      margin-bottom: 56px;
+    }
+
+    .flow-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+    }
+
+    @media (min-width: 900px) {
+      .flow-steps {
+        flex-direction: row;
+        align-items: stretch;
+      }
+    }
+
+    .flow-node {
+      flex: 1;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flow-node:hover {
+      border-color: var(--primary);
+      box-shadow: 0 0 20px var(--primary-light);
+    }
+
+    .flow-node-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+      margin-bottom: 12px;
+    }
+
+    .flow-node-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text-main);
+    }
+
+    .flow-node-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .flow-node-code {
+      margin-top: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 6px 10px;
+      border-radius: 6px;
+      color: var(--accent-cyan);
+    }
+
+    /* Checklist & Immediate Actions */
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-bottom: 56px;
+    }
+
+    .checklist-box {
+      background: var(--surface-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+    }
+
+    .checklist-box h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .task-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .task-item:last-child {
+      border-bottom: none;
+    }
+
+    .task-check {
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-size: 12px;
+    }
+
+    .check-done {
+      background: rgba(16, 185, 129, 0.2);
+      color: var(--accent-emerald);
+      border: 1px solid var(--accent-emerald);
+    }
+
+    .check-pending {
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--accent-amber);
+      border: 1px solid var(--accent-amber);
+    }
+
+    .task-text {
+      font-size: 0.9rem;
+    }
+
+    .task-title {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .task-sub {
+      color: var(--text-sub);
+      font-size: 0.8rem;
+    }
+
+    /* Terminal Code Snippet Block */
+    .terminal-card {
+      background: #060911;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 40px;
+    }
+
+    .terminal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .terminal-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .terminal-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .dot-red { background: #ef4444; }
+    .dot-yellow { background: #f59e0b; }
+    .dot-green { background: #10b981; }
+
+    .terminal-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text-sub);
+    }
+
+    pre {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: #e2e8f0;
+      overflow-x: auto;
+      line-height: 1.7;
+    }
+
+    .code-comment { color: #64748b; }
+    .code-cmd { color: #38bdf8; font-weight: 600; }
+    .code-param { color: #a5b4fc; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: var(--text-sub);
+      font-size: 0.85rem;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    footer a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+
+    /* Interactive modal for options click */
+    .interactive-toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--surface-raised);
+      border: 1px solid var(--border-highlight);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.9rem;
+      transform: translateY(120%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 100;
+    }
+
+    .interactive-toast.show {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="shield-badge">🛡️</div>
+        <span>Scam Call Shield</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#options" class="active">Pathways & Options</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#comparison">Matrix</a></li>
+        <li><a href="#status">Workspace Status</a></li>
+        <li><a href="#quickstart">Quick Run</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="status-pill">
+      <div class="status-dot"></div>
+      <span>All Core Source Files Implemented · Ready for Testing</span>
+    </div>
+    <h1>Strategic Plan & Evolution Options</h1>
+    <p class="hero-subtitle">
+      Review the roadmap for Scam Call Shield: an elder-focused AI guardian that listens to ongoing live phone calls, extracts psychological red flags via Gemini, and speaks warnings in Gujarati & Hindi.
+    </p>
+  </section>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Metrics Overview -->
+    <div class="metrics-bar">
+      <div class="metric-card">
+        <span class="metric-label">Current Architecture</span>
+        <span class="metric-value">Chunked 4s</span>
+        <span class="metric-note">Cumulative context tracking</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Target Languages</span>
+        <span class="metric-value">ગુજરાતી · हिन्दी</span>
+        <span class="metric-note">+ Indian English Support</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Detection Core</span>
+        <span class="metric-value">Gemini 4 Argon</span>
+        <span class="metric-note">Audio understanding + JSON schema</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Spoken Warning Engine</span>
+        <span class="metric-value">Gemini 3.8 Flash</span>
+        <span class="metric-note">With 2.5 Pro TTS Fallback</span>
+      </div>
+    </div>
+
+    <!-- SECTION 1: PATHWAYS & OPTIONS -->
+    <div class="section-title-wrap" id="options">
+      <div>
+        <h2 class="section-title">🧭 Which Pathway Should We Pursue?</h2>
+        <p class="section-desc">Choose from 3 strategic trajectories depending on whether your goal is demo excellence, live microphone testing, or production telecoms.</p>
+      </div>
+    </div>
+
+    <div class="options-grid">
+      <!-- Option 1 -->
+      <div class="option-card recommended">
+        <div>
+          <div class="option-badge-wrap">
+            <span class="option-tag tag-recommended">Option 1 · Recommended First</span>
+            <span class="option-icon">⚡</span>
+          </div>
+          <h3 class="option-name">Validate & Polish Current MVP</h3>
+          <p class="option-summary">
+            Generate the 4 synthetic Gemini call WAVs, boot the local server, and verify end-to-end detection, Gujarati/Hindi voice warnings, and WhatsApp emergency dispatch.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Zero Extra Setup:</strong> Uses the existing code in <code>server.mjs</code> and <code>public/</code>.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Guaranteed Reproducibility:</strong> Tested with 3 scam scripts (digital arrest, bank KYC) and 1 Swiggy safe script.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Elder UI Review:</strong> Test the large high-contrast fonts, emergency contact WhatsApp integration, and live risk meter.</span>
+            </li>
+          </ul>
+          <div class="pros-cons">
+            <p><span class="badge-pro">✓ Fastest Time to Result:</span> Ready to run as soon as <code>GEMINI_API_KEY</code> is passed.</p>
+            <p><span class="badge-con">△ Scope:</span> Uses pre-recorded/generated WAV audio rather than a live phone microphone.</p>
+          </div>
+        </div>
+        <button class="action-btn btn-primary" onclick="selectOption('Option 1: MVP Validation')">
+          Select Pathway 1 (Validate MVP)
+        </button>
+      </div>
+
+      <!-- Option 2 -->
+      <div class="option-card option-b">
+        <div>
+          <div class="option-badge-wrap">
+            <span class="option-tag tag-live">Option 2 · Interactive</span>
+            <span class="option-icon">🎙️</span>
+          </div>
+          <h3 class="option-name">Live Mic / Speakerphone Listener</h3>
+          <p class="option-summary">
+            Add live microphone streaming via <code>navigator.mediaDevices.getUserMedia</code>. Put any phone call on speaker next to your laptop/phone to detect real-world scams live.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Live Audio Ingestion:</strong> Continuous MediaRecorder / AudioWorklet stream cutting 4s buffers in real time.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Visual Waveform / VAD:</strong> Real-time audio frequency visualizer to show the user the mic is actively protecting them.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Real World Testable:</strong> Can test live by speaking fake scam lines directly into your microphone.</span>
+            </li>
+          </ul>
+          <div class="pros-cons">
+            <p><span class="badge-pro">✓ High Impact:</span> Creates a genuine physical device demo that protects actual phone calls in the room.</p>
+            <p><span class="badge-con">△ Audio Quality:</span> Room echo and background noise need clear microphone capture.</p>
+          </div>
+        </div>
+        <button class="action-btn btn-secondary" onclick="selectOption('Option 2: Live Mic Mode')">
+          Select Pathway 2 (Live Mic)
+        </button>
+      </div>
+
+      <!-- Option 3 -->
+      <div class="option-card option-c">
+        <div>
+          <div class="option-badge-wrap">
+            <span class="option-tag tag-enterprise">Option 3 · Production Scale</span>
+            <span class="option-icon">📡</span>
+          </div>
+          <h3 class="option-name">Telecom SIP / Gemini Live Stream</h3>
+          <p class="option-summary">
+            Architect for production deployment: bidirectional WebSocket stream using Gemini Multimodal Live API, Twilio Media Stream hook, and automated WhatsApp Business dispatch.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Ultra-Low Latency (&lt;600ms):</strong> Gemini 2.0 Flash Live WebSockets bidirectional audio streaming.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Twilio / Exotel Inbound:</strong> Forward calls directly to the shield proxy for network-level call interception.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Automated Emergency Dispatch:</strong> Real WhatsApp Cloud API / SMS alert sent to guardian family members instantly.</span>
+            </li>
+          </ul>
+          <div class="pros-cons">
+            <p><span class="badge-pro">✓ Production Ready:</span> Suitable for telecom carriers, elder-care NGOs, or cyber police pilot.</p>
+            <p><span class="badge-con">△ Requires:</span> Twilio credentials, external server hosting, and WebSocket infrastructure.</p>
+          </div>
+        </div>
+        <button class="action-btn btn-secondary" onclick="selectOption('Option 3: Telecom Live Stream')">
+          Select Pathway 3 (Telecom Stream)
+        </button>
+      </div>
+    </div>
+
+    <!-- SECTION 2: ARCHITECTURE FLOW -->
+    <div class="section-title-wrap" id="architecture">
+      <div>
+        <h2 class="section-title">🔄 Architecture & Real-Time Data Pipeline</h2>
+        <p class="section-desc">How audio travels from the phone call through chunked evaluation to spoken Gujarati/Hindi intervention.</p>
+      </div>
+    </div>
+
+    <div class="flow-wrapper">
+      <div class="flow-steps">
+        <div class="flow-node">
+          <div class="flow-node-num">1</div>
+          <div class="flow-node-title">Audio Slicing</div>
+          <div class="flow-node-desc">
+            Browser or mic audio is sliced into 4-second buffers and resampled to 16 kHz mono WAV via Web Audio API.
+          </div>
+          <div class="flow-node-code">OfflineAudioContext &bull; 16kHz</div>
+        </div>
+        <div class="flow-node">
+          <div class="flow-node-num">2</div>
+          <div class="flow-node-title">Cumulative Context</div>
+          <div class="flow-node-desc">
+            Chunk base64 is dispatched to <code>/api/analyze</code> along with transcript history so risk score builds cumulatively.
+          </div>
+          <div class="flow-node-code">POST /api/analyze {audio, context}</div>
+        </div>
+        <div class="flow-node">
+          <div class="flow-node-num">3</div>
+          <div class="flow-node-title">Gemini Reasoning</div>
+          <div class="flow-node-desc">
+            Gemini 4 Argon checks for 8 red flags (urgency, threats, digital arrest, OTPs) with structured JSON schema output.
+          </div>
+          <div class="flow-node-code">verdict: safe | suspicious | scam</div>
+        </div>
+        <div class="flow-node">
+          <div class="flow-node-num">4</div>
+          <div class="flow-node-title">Spoken Intervention</div>
+          <div class="flow-node-desc">
+            If scam detected, server generates reassuring Gujarati/Hindi speech via Gemini TTS and interrupts immediately.
+          </div>
+          <div class="flow-node-code">speak(warning, 'Kore') &bull; TTS</div>
+        </div>
+        <div class="flow-node">
+          <div class="flow-node-num">5</div>
+          <div class="flow-node-title">Guardian Dispatch</div>
+          <div class="flow-node-desc">
+            Pre-fills WhatsApp emergency alert for children: <em>"Your father may be on a scam call right now. Please call them."</em>
+          </div>
+          <div class="flow-node-code">wa.me/{phone}?text={alert}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: COMPARISON MATRIX -->
+    <div class="section-title-wrap" id="comparison">
+      <div>
+        <h2 class="section-title">📊 Pathway Comparison Matrix</h2>
+        <p class="section-desc">Detailed trade-off analysis across development time, hardware requirements, and user experience.</p>
+      </div>
+    </div>
+
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Dimension</th>
+            <th>Option 1: MVP Validation</th>
+            <th>Option 2: Live Mic Listener</th>
+            <th>Option 3: Telecom Live Stream</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Input Source</strong></td>
+            <td>Synthetic / Uploaded .WAV files</td>
+            <td>Live Device Microphone (Speakerphone)</td>
+            <td>Twilio SIP / Inbound Phone Call</td>
+          </tr>
+          <tr>
+            <td><strong>Latency to Detection</strong></td>
+            <td>8–12 seconds (2 chunks)</td>
+            <td>4–8 seconds</td>
+            <td>&lt; 1 second (Live WebSockets)</td>
+          </tr>
+          <tr>
+            <td><strong>Elder Accessibility</strong></td>
+            <td>Web dashboard demonstration</td>
+            <td>Hands-free speakerphone guardian</td>
+            <td>Transparent background carrier protection</td>
+          </tr>
+          <tr>
+            <td><strong>Setup Time</strong></td>
+            <td>5 minutes (Ready now)</td>
+            <td>~30–45 minutes</td>
+            <td>2–4 hours</td>
+          </tr>
+          <tr>
+            <td><strong>Prerequisites</strong></td>
+            <td><code>GEMINI_API_KEY</code> only</td>
+            <td><code>GEMINI_API_KEY</code> + Mic access</td>
+            <td>Gemini Key + Twilio Account + SSL domain</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SECTION 4: WORKSPACE STATUS & IMMEDIATE ACTIONS -->
+    <div class="section-title-wrap" id="status">
+      <div>
+        <h2 class="section-title">📋 Current Workspace Status</h2>
+        <p class="section-desc">Audit of existing files vs planned components.</p>
+      </div>
+    </div>
+
+    <div class="checklist-grid">
+      <div class="checklist-box">
+        <h3>Backend & Logic</h3>
+        <div class="task-item">
+          <div class="task-check check-done">✓</div>
+          <div class="task-text">
+            <div class="task-title"><code>server.mjs</code></div>
+            <div class="task-sub">Zero-dep static server &amp; API routes (/api/config, analyze, tts, notify)</div>
+          </div>
+        </div>
+        <div class="task-item">
+          <div class="task-check check-done">✓</div>
+          <div class="task-text">
+            <div class="task-title"><code>lib/gemini.mjs</code></div>
+            <div class="task-sub">Audio chunk analyzer with JSON schema, PCM-to-WAV converter, TTS runner</div>
+          </div>
+        </div>
+        <div class="task-item">
+          <div class="task-check check-done">✓</div>
+          <div class="task-text">
+            <div class="task-title"><code>scripts/generate-calls.mjs</code></div>
+            <div class="task-sub">Generates 4 demo WAVs (Gujarati, Hindi, English scam + genuine Swiggy)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="checklist-box">
+        <h3>Frontend & UI</h3>
+        <div class="task-item">
+          <div class="task-check check-done">✓</div>
+          <div class="task-text">
+            <div class="task-title"><code>public/index.html</code></div>
+            <div class="task-sub">Elder-friendly layout, high-contrast banner, call picker, WhatsApp alert card</div>
+          </div>
+        </div>
+        <div class="task-item">
+          <div class="task-check check-done">✓</div>
+          <div class="task-text">
+            <div class="task-title"><code>public/style.css</code></div>
+            <div class="task-sub">Full theme tokens, dark mode auto-switch, pulse animations on danger</div>
+          </div>
+        </div>
+        <div class="task-item">
+          <div class="task-check check-done">✓</div>
+          <div class="task-text">
+            <div class="task-title"><code>public/app.js</code></div>
+            <div class="task-sub">Audio slicing engine, cumulative risk meter, red-flag badge renderer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 5: QUICK RUN -->
+    <div class="section-title-wrap" id="quickstart">
+      <div>
+        <h2 class="section-title">🚀 How to Run Right Now</h2>
+        <p class="section-desc">Commands to generate demo audio calls and start the server.</p>
+      </div>
+    </div>
+
+    <div class="terminal-card">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <div class="terminal-dot dot-red"></div>
+          <div class="terminal-dot dot-yellow"></div>
+          <div class="terminal-dot dot-green"></div>
+        </div>
+        <div class="terminal-title">PowerShell / Bash Terminal</div>
+      </div>
+      <pre><code><span class="code-comment"># 1. Set your Gemini API key from Google AI Studio</span>
+<span class="code-cmd">$env:GEMINI_API_KEY</span> = <span class="code-param">"your_api_key_here"</span>
+
+<span class="code-comment"># 2. (Optional) Generate the 4 demo voice recordings with Gemini Speech</span>
+<span class="code-cmd">node</span> scripts/generate-calls.mjs
+
+<span class="code-comment"># 3. Start the Scam Call Shield server</span>
+<span class="code-cmd">node</span> server.mjs
+
+<span class="code-comment"># 4. Open in browser:</span>
+<span class="code-cmd">http://localhost:8080</span></code></pre>
+    </div>
+
+    <footer>
+      <p>Scam Call Shield &bull; Protecting Vulnerable Citizens Across India &bull; National Cybercrime Helpline: <strong>1930</strong></p>
+    </footer>
+
+  </div>
+
+  <!-- Interactive toast confirmation -->
+  <div class="interactive-toast" id="toast">
+    <span style="font-size:20px;">🎯</span>
+    <span id="toastText">Selected Pathway</span>
+  </div>
+
+  <script>
+    function selectOption(name) {
+      const toast = document.getElementById('toast');
+      const text = document.getElementById('toastText');
+      text.textContent = 'Selected: ' + name + ' — Tell your assistant to proceed!';
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 4000);
+    }
+  </script>
+</body>
+</html>

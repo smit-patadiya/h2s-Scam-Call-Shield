@@ -1,0 +1,16 @@
+# Environment and Secrets
+.env
+.env.*
+!.env-example
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

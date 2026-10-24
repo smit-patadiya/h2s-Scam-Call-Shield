@@ -1,0 +1,14 @@
+{
+  "name": "scam-call-shield",
+  "version": "1.0.0",
+  "description": "Real-time multilingual Indian scam call detection shield with 100-agent swarm",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node scripts/benchmark-accuracy.mjs"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

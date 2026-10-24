@@ -6,12 +6,13 @@
       "authority_claim",
       "threat",
       "isolation",
-      "personal_info_request"
+      "personal_info_request",
+      "money_request"
     ],
-    "risk": 95,
-    "reportedAt": "2026-10-24T13:27:46.405Z",
-    "reportsCount": 15,
-    "notes": "Impersonating Mumbai Police Cyber Crime / Narcotics Department | Caller claims to be from 'Mumbai Police Cyber Cell' and immediately references the victim's Aadhaar number, a common tactic to establish false authority and initiate an identity-related scam."
+    "risk": 100,
+    "reportedAt": "2026-10-24T13:55:53.654Z",
+    "reportsCount": 19,
+    "notes": "Impersonating Mumbai Police Cyber Crime / Narcotics Department | Caller claims to be from 'Mumbai Police Cyber Cell' and immediately references the victim's Aadhaar number, a common tactic to establish false authority and initiate an identity-related scam. | Sentinel detected: Law Enforcement / Regulatory Authority (P) · Contraband / Narcotics Interception Trigger (T) · Digital Arrest Video Isolation Pressure (M) · Urgent Countdown Pressure (M) · Fake Escrow Account Transfer Exploit (E) | Sentinel detected: Law Enforcement / Regulatory Authority (P) · Banking KYC Suspension Trigger (T) · Urgent Countdown Pressure (M) · OTP Extraction Exploit (E)"
   },
   {
     "phone": "+919876500002",

@@ -338,7 +338,8 @@ async function start() {
       $('status').textContent = `⚡ Multi-Agent Swarm analyzing ${t0.toFixed(0)}–${t1.toFixed(0)}s…`;
       
       const structuredContext = buildStructuredContext(s);
-      const r = await api('/api/analyze', { audio: audioB64, context: structuredContext });
+      const callName = $('upload').files[0] ? '' : $('callSelect').value;
+      const r = await api('/api/analyze', { audio: audioB64, context: structuredContext, callName });
       if (session === s) handleResult(s, r, i);
     } catch (e) {
       if (session === s) $('status').textContent = `Analysis note: ${e.message}`;

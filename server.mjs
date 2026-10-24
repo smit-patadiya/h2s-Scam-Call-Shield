@@ -24,11 +24,13 @@ http.createServer(async (req, res) => {
       return send(res, 200, { hasKey: !!process.env.GEMINI_API_KEY, model: ANALYZE_MODEL, calls: calls.filter((f) => f.endsWith('.wav')) });
     }
     if (req.method === 'POST' && req.url === '/api/analyze') {
-      const { audio, context, mime } = await readJson(req);
+      const { audio, context, mime, callName, clientTranscript } = await readJson(req);
       const result = await evaluateMultiAgent({
         audioB64: audio,
         context,
         mime: mime || 'audio/wav',
+        callName,
+        clientTranscript,
         analyzeChunkFn: analyzeChunk
       });
       return send(res, 200, result);

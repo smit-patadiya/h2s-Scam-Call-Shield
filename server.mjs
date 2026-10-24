@@ -11,15 +11,21 @@ const PORT = process.env.PORT || 8080;
 const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css',
   '.json': 'application/json', '.wav': 'audio/wav', '.svg': 'image/svg+xml' };
 
-const readJson = (req) => new Promise((res, rej) => {
-  let b = ''; req.on('data', (d) => { b += d; if (b.length > 25e6) req.destroy(); });
-  req.on('end', () => { try { res(JSON.parse(b || '{}')); } catch (e) { rej(e); } });
-});
+const readJson = (req) => {
+  if (req.body && typeof req.body === 'object') return Promise.resolve(req.body);
+  if (typeof req.body === 'string') {
+    try { return Promise.resolve(JSON.parse(req.body)); } catch (e) { return Promise.reject(e); }
+  }
+  return new Promise((res, rej) => {
+    let b = ''; req.on('data', (d) => { b += d; if (b.length > 25e6) req.destroy(); });
+    req.on('end', () => { try { res(JSON.parse(b || '{}')); } catch (e) { rej(e); } });
+  });
+};
 const send = (res, code, obj) => { res.writeHead(code, { 'content-type': 'application/json' }); res.end(JSON.stringify(obj)); };
 
-http.createServer(async (req, res) => {
+export default async function handler(req, res) {
   try {
-    if (req.method === 'GET' && req.url === '/api/config') {
+    if (req.method === 'GET' && (req.url === '/api/config' || req.url?.endsWith('/config'))) {
       const calls = await readdir(join(ROOT, 'calls')).catch(() => []);
       return send(res, 200, { hasKey: !!process.env.GEMINI_API_KEY, model: ANALYZE_MODEL, calls: calls.filter((f) => f.endsWith('.wav')) });
     }
@@ -70,4 +76,14 @@ http.createServer(async (req, res) => {
     console.error(e.message);
     send(res, e.status || 500, { error: e.message });
   }
-}).listen(PORT, () => console.log(`Scam Call Shield on http://localhost:${PORT}`));
+}
+
+const isMain = process.argv[1] && (
+  fileURLToPath(import.meta.url) === process.argv[1] ||
+  process.argv[1].endsWith('server.mjs')
+);
+
+if (isMain) {
+  http.createServer(handler).listen(PORT, () => console.log(`Scam Call Shield on http://localhost:${PORT}`));
+}
+
